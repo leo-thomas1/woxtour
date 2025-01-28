@@ -1,0 +1,55 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Hero Section */
+  .ut-hero-section {
+    background-image: url('../images/Upcomigp/bgro.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ut-hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Slight overlay */
+    z-index: 1;
+  }
+  
+  .ut-hero-section .hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+  }
+  
+  .ut-hero-section .sub-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+  }
+  
+  .ut-hero-section .main-title {
+    font-size: 6rem;
+    font-family: "Yesteryear", cursive;
+    font-weight: 700;
+    color: antiquewhite;
+    position: relative;
+    bottom: 5vh;
+  
+  }
+  

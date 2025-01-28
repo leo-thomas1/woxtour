@@ -1,0 +1,212 @@
+/* Footer Section */
+.footer-section {
+  position: relative;
+  background-color: #f9f9f9;
+  padding: 3rem 2rem; /* Adjusted padding for overall layout */
+  overflow: hidden;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  position: relative;
+  padding: 4% 10%; /* Adjust padding for smaller screens */
+  gap: 2rem; /* Add spacing between rows when wrapping */
+  z-index: 2;
+}
+
+/* Footer Columns */
+.footer-column {
+  flex: 1;
+  min-width: 200px; /* Ensure minimum column width */
+  margin: 0 1rem; /* Reduced margin for tighter spacing */
+}
+
+.branding-column {
+  flex: 1.2; /* Slightly larger for the branding column */
+  min-width: 250px; /* Ensure a minimum width for branding */
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Arrow Decoration Under Travel */
+.arrow-image {
+  position: absolute;
+  top: 1.5rem; /* Adjust position to sit under "Travel" */
+  left: 1rem;
+  width: 80px; /* Control the size of the arrow */
+  height: auto;
+}
+
+/* Footer Icons */
+.footer-icons {
+  display: flex;
+  gap: 0.4rem; /* Adjusted spacing between icons */
+  margin-top: 1rem;
+}
+
+.footer-icons .icon {
+  font-size: 1.2rem;
+  color: #ff5a5f;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-icons .icon:hover {
+  color: #e14b4f;
+}
+
+/* Footer Column Headings */
+.footer-column h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem; /* Reduced spacing below headings */
+}
+
+/* Footer List */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.4rem; /* Reduced gap between list items */
+  color: #555;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  color: #ff5a5f;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 0.5rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-width: 200px; /* Ensure minimum input size */
+}
+
+.newsletter-form button {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #e14b4f;
+}
+
+.newsletter-note {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/* Footer Decorative Image */
+.footer-image-container {
+  position: absolute;
+  bottom: -20%;
+  right: -20px; /* Slightly adjust to avoid overlap */
+  width: 950px; /* Increased size for larger appearance */
+  height: auto;
+  z-index: 1;
+  opacity: 0.2; /* Faded appearance */
+}
+
+.footer-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  right: -30%;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #777;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack columns vertically */
+    padding: 4% 5%; /* Reduce padding for smaller screens */
+    gap: 1.5rem; /* Adjust gap between stacked columns */
+  }
+
+  .footer-column {
+    margin: 0; /* Remove margin for stacked columns */
+    text-align: center; /* Center-align content */
+  }
+
+  .branding-column {
+    text-align: center; /* Center-align branding */
+  }
+
+  .arrow-image {
+    left: 50%; /* Center the arrow */
+    transform: translateX(-50%); /* Adjust position */
+    top: 2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column; /* Stack input and button */
+    gap: 0.8rem;
+  }
+
+  .newsletter-form input {
+    width: 100%; /* Full-width input */
+  }
+
+  .newsletter-form button {
+    width: 100%; /* Full-width button */
+  }
+
+  .footer-image-container {
+    width: 700px; /* Adjust size for smaller screens */
+    bottom: -15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .footer-icons .icon {
+    font-size: 1rem; /* Reduce icon size */
+  }
+
+  .footer-content {
+    gap: 1rem; /* Further reduce gap */
+  }
+
+  .footer-image-container {
+    width: 500px; /* Adjust image size further */
+  }
+}

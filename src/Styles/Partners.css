@@ -1,0 +1,45 @@
+.partners {
+    background-color: #f8f8f8; /* Light gray background for contrast */
+    padding: 40px 50px; /* Spacing for the section */
+    text-align: center;
+    position: relative;
+  }
+  
+  .partners h2 {
+    font-size: 1.5rem;
+    color: #333; /* Darker text color for heading */
+    margin-bottom: 30px; /* Spacing below the heading */
+  }
+  
+  .partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10%; /* Space between partner logos */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .partner-logos img {
+    max-width: 120px; /* Limit the size of logos */
+    height: auto; /* Maintain aspect ratio */
+    filter: grayscale(100%); /* Optional: Make logos grayscale */
+    transition: filter 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .partner-logos img:hover {
+    filter: none; /* Show original colors on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .partner-logos img {
+      max-width: 100px; /* Smaller logos for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partner-logos img {
+      max-width: 80px; /* Even smaller logos for mobile */
+    }
+  }
+  

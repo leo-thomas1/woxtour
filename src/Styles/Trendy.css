@@ -1,0 +1,163 @@
+/* Trendy Section Styling */
+.trendy-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+  
+  .trendy-label {
+    font-size: 1rem;
+    color: #ff5a5f;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .trendy-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .trendy-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .trendy-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+  }
+  
+  .trendy-card-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .trendy-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .trendy-flag {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular flag */
+    overflow: hidden;
+    z-index: 2; /* Ensure flag appears above the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 4px solid white; /* Add white border around the flag */
+
+  }
+  
+  .trendy-flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Card Content */
+  .trendy-card-content {
+    padding: 1rem;
+    z-index: 0;
+  }
+  
+  .trendy-card-icons {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .trendy-card-icons span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .trendy-card-location {
+    font-size: 1rem;
+    color: #ff5a5f;
+    margin-bottom: 1rem;
+  }
+  
+  .trendy-card-pricing {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .trendy-discounted-price {
+    color: #ff5a5f;
+    font-weight: bold;
+  }
+  
+  .trendy-original-price {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .trendy-rating {
+    color: #ffc107;
+  }
+  
+  .trendy-card-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .trendy-card-button {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .trendy-card-button:hover {
+    background-color: #e14b4f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .trendy-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .trendy-card {
+      width: 100%;
+    }
+  }
+  

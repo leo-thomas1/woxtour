@@ -1,0 +1,80 @@
+.home-category-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .home-category-label {
+    font-size: 1.2rem;
+    color: #ff9100;
+  }
+  
+  .home-category-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333333;
+  }
+  
+  .home-category-cards {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    position: relative; /* Necessary for positioning the rectangle */
+  }
+  
+  .home-category-card-container {
+    position: relative; /* Ensures the rectangle is positioned relative to this container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .home-category-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .home-orange-rectangle {
+    position: absolute;
+    bottom: -25px; /* Adjusts rectangle position to overlap */
+    left: 50%; /* Centers the rectangle horizontally */
+    transform: translate(-155%,10%); /* Adjusts alignment to center */
+    width: 100px; /* Width of the rectangle */
+    height: 100px; /* Height of the rectangle */
+    background-color: #ff6600; /* Orange color */
+    border-radius: 35% 3  5% 35% 35%; /* Creates the rounded corner effect */
+    z-index: -1; /* Ensures it appears behind the card content */
+  }
+  
+  .home-category-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    z-index: 1; /* Ensures the card is above the rectangle */
+    border-radius: 10% 10% 10% 10%; /* Creates the rounded corner effect */
+
+  }
+  
+  .home-category-card.highlighted {
+    background: #ffffff; /* Optional: Highlighted background for emphasis */
+  }
+  
+  .home-category-card img {
+    max-width: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .home-category-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .home-category-card p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

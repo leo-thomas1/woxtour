@@ -1,0 +1,250 @@
+/* General Container */
+.swifinfo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 5vh 10vw;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Left Section */
+  .swifinfo-left {
+    text-align: left;
+    width: 60%;
+    position: relative;
+    right: 10vh;
+    z-index: 1;
+  }
+  
+  .swifinfo-title {
+    font-size: 4vh;
+    font-weight: bold;
+    color: #2c2c54;
+  }
+  
+  .swifinfo-price {
+    font-size: 2vh;
+    color: #000000;
+    margin: 1vh 0;
+    position: relative;
+    bottom: 7vh;
+    left: 30vh;
+  }
+  .swifinfo-amount{
+    color: #ff9900;
+    font-size: 4vh;
+
+  }
+  .swifinfo-rating,
+  .swifinfo-description {
+    font-size: 2vh;
+    color: #555;
+    margin-bottom: 4vh;
+    position: relative;
+    text-align: left;
+    bottom: 5vh;
+  }
+
+  .swifinfo-details {
+    font-size: 2vh;
+    color: #333;
+    line-height: 2.5vh; /* Adjust spacing between lines */
+    display: flex;
+    flex-direction: column;
+    gap: 1vh; /* Space between rows */
+  }
+  
+  .swifinfo-details p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .swifinfo-details strong {
+    min-width: 17vw; /* Fixed width for alignment */
+    text-align: left;
+    margin-right: 1vw; /* Space between strong and span */
+    color: #f66d44;
+  }
+  
+  .swifinfo-details span {
+    color: #555;
+  }
+  
+  
+  
+  /* Inclusions Section */
+.swifinfo-inclusions {
+  margin-top: 4vh;
+}
+
+.swifinfo-inclusions h4 {
+  font-size: 2vh;
+  font-weight: bold;
+  color: #f66d44;
+  margin-bottom: 1vh;
+}
+
+.swifinfo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2vh 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  gap: 1vh;
+  position: relative;
+  bottom: 3.3vh;
+  left:38vh;
+}
+
+.swifinfo-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.9vh;
+  color: #333;
+  
+}
+
+.swifinfo-icon-tick {
+  color: #0a0c0a;
+  margin-right: 1vh;
+  font-size: 2.2vh;
+}
+
+.swifinfo-icon-cross {
+  color: #181414;
+  margin-right: 1vh;
+  font-size: 2.2vh;
+}
+
+  
+  /* Right Section */
+  .swifinfo-right {
+    width: 40vh;
+    height: 80vh;
+    background: #0303030f;
+    border-radius: 1vh;
+    padding: 2vh 3vw;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.158);
+    position: relative;
+    left: 79vh;
+    bottom: 105vh;
+    z-index: 1;
+  }
+  .swifinfo-right h3{
+    text-align: center;
+  }
+  
+  .swifinfo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+  
+  .swifinfo-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .swifinfo-icon {
+    position: absolute;
+    left: 1vh;
+    font-size: 2vh;
+    color: #ccc;
+  }
+  
+  .swifinfo-input-container input,
+  .swifinfo-input-container textarea {
+    width: 100%;
+    padding: 1.5vh 1.5vh 1.5vh 3.5vh; /* Adjust padding for icon */
+    border: 0.2vh solid #ddd;
+    border-radius: 0.5vh;
+  }
+  
+  .swifinfo-check-btn,
+  .swifinfo-book-btn {
+    padding: 1.5vh;
+    font-size: 2vh;
+    font-weight: bold;
+    border-radius: 0.5vh;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .swifinfo-check-btn {
+    background: #f66d44;
+    color: white;
+  }
+  
+  .swifinfo-book-btn {
+    background: #2c2c54;
+    color: white;
+  }
+  
+  /* Gallery Section */
+  .swifinfo-gallery {
+    text-align: left;
+    position: relative;
+    bottom: 90vh;
+    right: 10vh;
+    width: 90vh;
+    z-index: 2;
+
+  }
+  .swifinfo-gallery h3{
+    position: relative;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  /* Gallery Images Container */
+.swifinfo-gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* Flexible columns */
+    gap: 1vh; /* Space between images */
+    margin-top: 4vh;
+    justify-items: center; /* Center images in their grid cells */
+  }
+  
+  /* Individual Gallery Images */
+  .swifinfo-gallery-image {
+    width: 29vh; /* Ensure responsiveness */
+    height: 29vh; /* Maintain aspect ratio */
+    border-radius: 1vh; /* Add rounded corners */
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    object-fit: cover; /* Ensure the image fits within its box */
+  }
+  
+  /* Hover Effect for Images */
+  .swifinfo-gallery-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .swifinfo-gallery-images {
+      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); /* Fewer columns for smaller screens */
+    }
+  
+    .swifinfo-gallery-image {
+      max-width: 150px; /* Smaller images for smaller screens */
+    }
+  }
+  
+  /* Plane Section */
+  .swifinfo-plane {
+    text-align: center;
+  }
+  
+  .swifinfo-plane-image {
+    width:70vh;
+    height: 45vh;
+    position: relative;
+    bottom: 160vh;
+    z-index: 0;
+    left: 50vh;
+  }
+  

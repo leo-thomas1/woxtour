@@ -1,0 +1,80 @@
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    transform: translate(78%, 10%); /* Default positioning for larger screens */
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 10px 10px; /* Inner padding for spacing */
+    max-width: 600px; /* Limit the total width of the form */
+    width: 90%; /* Adjust width to make it responsive */
+  }
+  
+  .search-form input,
+  .search-form select {
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0); /* Fully transparent background */
+    width: 100%; /* Make inputs stretch to fill their container */
+  }
+  
+  .search-form .submit {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-form input::placeholder {
+    color: #ffffff; /* White color for placeholder text */
+    font-style: italic; /* Optional styling for placeholder */
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets and medium-sized screens */
+  @media (max-width: 768px) {
+    .search-form {
+      transform: translate(0, 0); /* Reposition for medium screens */
+      margin: 0 auto; /* Center the form horizontally */
+      max-width: 90%; /* Increase width for medium screens */
+      gap: 8px; /* Reduce gap between elements */
+    }
+  
+    .search-form input,
+    .search-form select {
+      padding: 8px; /* Adjust padding for smaller inputs */
+    }
+  
+    .search-form .submit {
+      padding: 8px 16px; /* Adjust button size */
+    }
+  }
+  
+  /* For phones and small screens */
+  @media (max-width: 480px) {
+    .search-form {
+      flex-direction: column; /* Stack inputs and button vertically */
+      align-items: stretch; /* Stretch inputs and button to full width */
+      transform: translate(0, 0); /* Reposition for small screens */
+      padding: 10px; /* Adjust padding */
+      max-width: 100%; /* Use full width */
+    }
+  
+    .search-form input,
+    .search-form select,
+    .search-form .submit {
+      width: 100%; /* Make elements fill full width */
+      margin-bottom: 10px; /* Add spacing between stacked elements */
+    }
+  
+    .search-form .submit {
+      margin-bottom: 0; /* Remove bottom margin for last element */
+    }
+  }
+  

@@ -1,0 +1,199 @@
+.tour-plan-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 5%;
+    padding: 5vh 10vw;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+  }
+  
+  /* Left Section: Tour Plan */
+  .tour-plan-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    z-index: 1;
+  }
+  
+  .tour-plan-title {
+    font-size: 4vh;
+    font-weight: bold;
+    color: #2c2c54;
+    margin-bottom: 3vh;
+  }
+  
+  .tour-plan-timeline {
+    position: relative;
+  }
+  
+  .tour-plan-timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2.5vh;
+    width: 0.3vh;
+    height: 97vh;
+    background: repeating-linear-gradient(
+      to bottom,
+      #f66d44,
+      #f66d44 1vh,
+      transparent 1vh,
+      transparent 2vh
+    );
+    z-index: 0;
+  }
+  
+  .tour-plan-item {
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 3vh;
+  }
+  
+  .tour-plan-day {
+    background-color: #f66d44;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: bold;
+    height: 5vh;
+    width: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    position: relative;
+    
+  }
+  .tour-plan-content
+  {
+    position: relative;
+  }
+  
+  .tour-plan-content h3 {
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: #2c2c54;
+  }
+  
+  .tour-plan-content p {
+    font-size: 2vh;
+    color: #555;
+    margin-bottom: 1vh;
+  }
+  
+  .tour-plan-content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 2vh;
+    color: #555;
+  }
+  
+  .tour-plan-content ul li {
+    margin-bottom: 0.5vh;
+    position: relative;
+    padding-left: 2vh;
+  }
+  
+  .tour-plan-content ul li:before {
+    content: "•";
+    color: #f66d44;
+    font-size: 2vh;
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Right Section */
+  .tour-plan-right {
+    width: 40vh;
+    height: 80vh;
+    background: #0303030f;
+    border-radius: 1vh;
+    padding: 2vh 3vw;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.158);
+    position: relative;
+    left: 0vh;
+    top: 10vh;
+    z-index: 1;
+  }
+  .tour-plan-right h3{
+    text-align: center;
+  }
+  
+  .tour-plan-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+  
+  .tour-plan-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tour-plan-icon {
+    position: absolute;
+    left: 1vh;
+    font-size: 2vh;
+    color: #ccc;
+  }
+  
+  .tour-plan-input-container input,
+  .tour-plan-input-container textarea {
+    width: 100%;
+    padding: 1.5vh 1.5vh 1.5vh 3.5vh; /* Adjust padding for icon */
+    border: 0.2vh solid #ddd;
+    border-radius: 0.5vh;
+  }
+  
+  .tour-plan-check-btn,
+  .tour-plan-book-btn {
+    padding: 1.5vh;
+    font-size: 2vh;
+    font-weight: bold;
+    border-radius: 0.5vh;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tour-plan-check-btn {
+    background: #f66d44;
+    color: white;
+  }
+  
+  .tour-plan-book-btn {
+    background: #2c2c54;
+    color: white;
+  }
+  
+  /* Plane Image */
+  .tour-plan-plane-image {
+    grid-column: 1 / span 2;
+    text-align: center;
+    margin-top: 5vh;
+    z-index: 0;
+   
+  }
+  
+  .tour-plan-plane-image img {
+    position: relative;
+    width: 70vh;
+    height: 45vh;
+    bottom: 30vh;
+    left: 40vh;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tour-plan-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .plane-image img {
+      width: 60vw;
+    }
+  }
+  

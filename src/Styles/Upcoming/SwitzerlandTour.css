@@ -1,0 +1,105 @@
+/* Container */
+.switzerland-tour-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+/* Header Section */
+.switzerland-header {
+    width: 100%;
+    height: 40vh;
+    background: url("../../images/Upcomigp/landscape.jpg") no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.switzerland-header h1 {
+    font-size: 6vh;
+    margin: 0;
+}
+
+.switzerland-header h4 {
+    font-size: 3vh;
+    margin: 0.5vh 0 0;
+}
+
+/* Sub-footer Navigation */
+.switzerland-sub-footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    background: #ffffff;
+    padding: 1.5vh 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 1vh;
+    margin-top: -4vh; /* Slight overlap effect */
+    z-index: 2;
+}
+
+.switzerland-sub-footer button {
+    font-size: 1.8vh;
+    padding: 1.2vh 2vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5vh;
+    color: #333;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.switzerland-sub-footer button:hover,
+.switzerland-sub-footer button.active {
+    color: #f66d44;
+    font-weight: bold;
+}
+
+.switzerland-sub-footer button svg {
+    font-size: 2vh;
+}
+
+/* Section Content */
+.switzerland-section-content {
+  position: relative;
+  width: 100%; /* Full width */
+  min-width: 10vh; /* Minimum width */
+  max-width: 170vh; /* Restricts maximum width */
+  min-height: 100vh; /* Minimum height */
+  max-height: 300vh; /* Let the height adjust dynamically */
+  margin: 4vh auto;
+  padding: 2vh;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1vh;
+  transition: all 0.3s ease; /* Smooth resizing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust layout to remove empty space */
+  overflow: hidden; /* Prevent extra overflow space */
+  bottom: 5vh;
+}
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1200px) {
+    .switzerland-section-content {
+      max-width: 90vw; /* Adjust maximum width for laptops */
+      padding: 1.5vh;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .switzerland-section-content {
+      max-width: 100vw; /* Use full width for smaller screens */
+      padding: 1vh;
+    }
+  }
+  

@@ -1,0 +1,91 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 80%;
+  z-index: 10;
+  align-items: center;
+  right: 190px;
+}
+
+.logo-container {
+  position: relative;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 0 0 0 100%;
+}
+
+.arrow1 {
+  position: absolute;
+  bottom: -20px;
+  left: 110%;
+  width: 100px;
+  height: auto;
+  transform: rotate(-5deg);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.get-in-touch {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  transform: translate(-100%);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 5px;
+  z-index: 10;
+  width: 290%;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #554b4b;
+  font-size: 1rem;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,242 @@
+/* Promotion Section Styling */
+.home-promotion-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vh 2vw;
+  font-family: Arial, sans-serif;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.home-promotion-content {
+  text-align: center;
+  margin-bottom: 5vh;
+  position: relative;
+  width:60%;
+  right: 20vh;
+  top: 20vh;
+}
+
+.home-promotion-label {
+  font-size: 2vh;
+  color: #ff5a5f;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1vh;
+  text-align: left;
+}
+
+h1 {
+  font-size: 3.5vh;
+  color: #333;
+  margin-bottom: 2vh;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+}
+
+.home-promotion-description {
+  font-size: 1.6vh;
+  color: #555;
+  margin-bottom: 2vh;
+  line-height: 1.6;
+  text-align: left;
+  width: 50%;
+}
+
+.home-view-packages-button {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 1vh 2vw;
+  border-radius: 0.8vh;
+  font-size: 1.6vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  right: 45.5vh;
+}
+
+.home-view-packages-button:hover {
+  background-color: #e14b4f;
+}
+
+.home-pro-promotion-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  position: relative;
+  bottom: 5vh;
+}
+
+.home-pro-main-image {
+  position: relative;
+  width: 25%; /* Reduced size */
+  max-width: 400px; /* Limit max width */
+  margin: 0 auto;
+  text-align: center;
+  bottom: 5vh;
+  position: relative;
+  left: 30vh;
+}
+
+.home-pro-main-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1vh;
+  z-index: 2; /* Ensure the image is above the gradient */
+  position: relative; /* Establish stacking context */
+}
+
+.home-pro-main-image::before {
+  content: '';
+  position: absolute;
+  top: -2vh;
+  left: -2vw;
+  width: calc(80% + 4vw);
+  height: calc(90% + 4vh);
+  border: 0.4vh solid #91038f;
+  border-radius: 50% 50% 0 0;
+  z-index: 1;
+  
+}
+
+.home-pro-vertical-text {
+  position: absolute;
+  top: 25%;
+  right: -2vw;
+  transform: rotate(270deg);
+  transform-origin: right center;
+  font-size: 3.5vh;
+  color: #888888a7;
+  font-weight: bold;
+}
+
+.home-image-cards {
+  display: flex;
+  gap: 1.5vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  right: 47vh;
+  width:120vh;
+  bottom: 3vh;
+}
+
+.home-image-card {
+  position: relative;
+  top: -27vh;
+  left:20vh;
+  width: 20%; /* Reduced size */
+  max-width: 200px; /* Limit max size for individual images */
+  height: auto;
+  overflow: hidden;
+  border-radius: 1vh;
+  box-shadow: 0 0.5vh 0.8vh rgba(0, 0, 0, 0.1);
+}
+
+.home-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-price-tag {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1.2vh;
+  padding: 0.3vh 0.5vw;
+  border-radius: 0.5vh;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  h1 {
+      font-size: 3vh;
+  }
+
+  .home-promotion-description {
+      font-size: 1.4vh;
+  }
+
+  .home-pro-main-image {
+      max-width: 300px; /* Smaller main image for tablets */
+      bottom: 3vh;
+  }
+
+  .home-pro-main-image::before {
+      top: -1.5vh;
+      left: -1.5vw;
+      width: calc(100% + 3vw);
+      height: calc(100% + 3vh);
+      border: 0.3vh solid #91038f;
+  }
+
+  .home-vertical-text {
+      right: -3vw;
+      font-size: 2vh;
+  }
+
+  .home-image-card {
+      width: 25%;
+      max-width: 160px; /* Smaller cards for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5vh;
+  }
+
+  .home-promotion-description {
+      font-size: 1.2vh;
+  }
+
+  .home-pro-main-image {
+      max-width: 250px;
+  }
+
+  .home-image-card {
+      width: 35%;
+      max-width: 140px;
+      margin: 1vh 0;
+  }
+
+  .home-vertical-text {
+      right: -2vw;
+      font-size: 1.8vh;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2vh;
+  }
+
+  .home-promotion-description {
+      font-size: 1vh;
+  }
+
+  .home-pro-main-image {
+      max-width: 200px;
+  }
+
+  .home-image-card {
+      width: 45%;
+      max-width: 120px;
+  }
+
+  .home-view-packages-button {
+      padding: 0.8vh 1.5vw;
+      font-size: 1.4vh;
+  }
+}

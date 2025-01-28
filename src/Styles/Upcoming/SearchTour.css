@@ -1,0 +1,356 @@
+/* Container */
+.search-tour-container {
+    padding: 2vh 0vw;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Main Tour Box */
+  .tour-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 140vh;
+    height: 180vh;
+    margin: 0 auto;
+    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 2vh 2vw;
+    border-radius: 1.5vh;
+    transform: translateY(-8vh);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+ 
+  
+  /* Filter Section */
+  .filter-container {
+    padding-bottom: 2vh;
+  }
+  
+  .filter-options {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.8vh;
+    padding: 0% 20%; /* Adjust padding for smaller screens */
+    gap: 2rem;
+    
+  }
+  
+  .filter-options li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .filter-options li:hover {
+    color: #f66d44;
+  }
+  
+  /* Content Section */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3vh;
+  }
+  
+  /* Tour Cards */
+  .tour-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 2vh;
+    flex: 1;
+    position: relative;
+    width: 100vh;
+    height: 150vh;
+    
+  }
+  
+  .tour-card {
+    position: relative;
+    background-color: white;
+    border-radius: 1vh;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .tour-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5vh 2vh rgba(0, 0, 0, 0.2);
+  }
+  
+  .tour-card img {
+    width: 35vh;
+    height: 25vh;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 2vh;
+  }
+  
+  .card-content h3 {
+    font-size: 2.5vh;
+    color: #333;
+    margin-bottom: 1vh;
+  }
+  
+  .card-content p {
+    font-size: 1.8vh;
+    color: #666;
+    margin-bottom: 1vh;
+  }
+  
+  .card-content .price {
+    font-size: 2vh;
+    color: #f66d44;
+    font-weight: bold;
+  }
+  
+  .card-content .rating {
+    font-size: 1.8vh;
+    color: #ffcc00;
+  }
+
+  /* Footer Section in Each Card */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f66d44;
+    color: white;
+    padding: 1vh 2%;
+    font-size: 1.5vh;
+    border-radius: 0 0 0.5vh 0.5vh;
+  }
+  
+  .card-footer-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5vh;
+  }
+  
+  .card-footer-item i {
+    font-size: 2vh;
+  }
+
+  /* Simple Pagination */
+.pagination-simple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 25vh;
+  }
+  
+  .pagination-arrow,
+  .pagination-page {
+    font-size: 2vh;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    padding: 1vh 1.5vh;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .pagination-page.active {
+    background: #ddd;
+    color: #2c2c54;
+    font-weight: bold;
+  }
+  
+  .pagination-arrow {
+    color: #555;
+  }
+  
+  .pagination-page:hover,
+  .pagination-arrow:hover {
+    background: #f66d44;
+    color: white;
+  }
+
+  .price-rating {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    font-size: 2vh;
+  }
+  
+  .price {
+    color: #f66d44;
+    font-weight: bold;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    color: #f4c542; /* Gold color for the star */
+    font-weight: bold;
+  }
+  
+  .rating-icon {
+    margin-right: 0.5vh;
+    font-size: 2vh;
+    color: #f4c542;
+  }
+  
+  
+  
+  
+  
+/* Right Panel */
+.right-panel {
+    width: 30%;
+    height: 30%;
+    padding: 4%;
+    background: #f9f9f9;
+    border-radius: 1.5vh;
+    box-shadow: 0 0.5vh 2vh rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.056);
+
+
+  }
+  
+  .right-panel h3 {
+    font-size: 3vh;
+    color: #2c2c54;
+    margin-bottom: 1.5vh;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .right-panel p {
+    font-size: 2vh;
+    color: #666;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+  
+  .right-panel form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  
+  .right-panel input,
+  .right-panel button {
+    width: 100%;
+    padding: 1.5vh;
+    border: 0.2vh solid #ddd;
+    border-radius: 0.5vh;
+    font-size: 2vh;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .right-panel input[type="text"]::placeholder {
+    color: #ccc;
+    font-size: 2vh;
+  }
+  
+  .right-panel input:focus {
+    border-color: #f66d44;
+    outline: none;
+  }
+  
+  .right-panel button {
+    background: #f66d44;
+    color: white;
+    border: none;
+    font-size: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .right-panel button:hover {
+    background: #d95635;
+    box-shadow: 0 0.5vh 2vh rgba(0, 0, 0, 0.2);
+  }
+  
+  .right-panel .price-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1vh;
+  }
+  
+  .price-filter label {
+    font-size: 2vh;
+    color: #2c2c54;
+    font-weight: bold;
+  }
+  
+  .price-filter input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+  }
+  
+  .price-filter input[type="range"]::-webkit-slider-runnable-track {
+    height: 0.5vh;
+    background: #ddd;
+    border-radius: 0.3vh;
+  }
+  
+  .price-filter input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 2vh;
+    width: 2vh;
+    background: #f66d44;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .price-filter input[type="range"]::-moz-range-thumb {
+    height: 2vh;
+    width: 2vh;
+    background: #f66d44;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .price-filter p {
+    font-size: 1.8vh;
+    color: #333;
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .right-panel {
+      width: 100%;
+      margin-top: 3vh;
+      box-shadow: none;
+    }
+  }
+  
+  
+  .travel-image {
+    width: 70vh;
+    height: 43vh;
+    position: relative;
+    left: 55vh;
+    bottom: 70vh;
+    z-index: -1;
+  }
+  
+  .shell-image {
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    width: 10vw;
+    height: auto;
+    z-index: 0;
+  }
+  

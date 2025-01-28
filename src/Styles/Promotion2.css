@@ -1,0 +1,102 @@
+/* Shared Styling for Both Cards */
+.promotion2-section {
+    display: flex;
+    justify-content: center;
+    height: 50vh; /* Height set to half of the viewport */
+    position: relative;
+
+  }
+  
+  .promotion2-card {
+    position: relative;
+    width: 48%; /* Adjust width as necessary */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .promotion2-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.7); /* Darken the image for better text contrast */
+  }
+  
+  .promotion2-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    align-items: center;
+  }
+  
+  .promotion2-label {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+  }
+  
+  h2 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;  
+
+}
+  
+  .promotion2-button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .promotion2-button:hover {
+    background: white;
+    color: #333;
+  }
+  
+  /* Unique Styling for Nature Card */
+  .nature-card {
+    background-color: rgba(0, 128, 0, 0.1); /* Optional: Add a background overlay */
+  }
+  
+  .nature-image {
+    filter: brightness(0.8) saturate(1.2); /* Adjust brightness or saturation */
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Unique Styling for City Card */
+  .city-card {
+    background-color: rgba(0, 0, 128, 0.1); /* Optional: Add a background overlay */
+  }
+  
+  .city-image {
+    filter: brightness(0.9) contrast(1.1); /* Adjust brightness or contrast */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .promotion2-section {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .promotion2-card {
+      width: 100%;
+    }
+  }
+  

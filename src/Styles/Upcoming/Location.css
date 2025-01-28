@@ -1,0 +1,173 @@
+/* Container */
+.location-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    gap: 5%;
+    padding: 5vh 10vw;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+  }
+  
+  /* Left Section */
+  .location-left {
+    width: 105%;
+    padding: 2vh;
+    background: #ffffff00;
+    border-radius: 1vh;
+    box-shadow: 0 0vh 0vh rgba(0, 0, 0, 0);
+    margin-bottom: 2vh;
+    position: relative;
+    right: 15vh;
+    top: 10vh;
+    line-height: 4vh;
+  }
+  .location-title {
+    text-align: center;
+    font-size: 4.5vh;
+    margin-bottom: 1.5vh;
+    text-align: left;
+  }
+
+  .location-map {
+    position: relative;
+    width: 80vh;
+    height: auto;
+    margin: 2vh 0;
+    border-radius: 1vh;
+  }
+  
+  /* Right Section */
+  .location-right {
+    width: 95%;
+    height: auto;
+    padding: 2vh;
+    background: #06000021;
+    border-radius: 1vh;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.357);
+    margin-bottom: 4vh; /* Add margin to avoid overlap */
+    z-index: 1;
+    position: relative;
+    bottom:10vh ;
+    left: 8vh;
+
+  }
+  .location-right h3 {
+    text-align: center;
+    font-size: 4vh;
+    margin-bottom: 1.5vh;
+  }
+
+  .location-right p{
+    text-align: center;
+    font-size: 2vh;
+
+  }
+  .location-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+  
+  .location-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50vh;
+  }
+  
+  .location-icon {
+    position: absolute;
+    left: 1vh;
+    font-size: 2vh;
+    color: #ccc;
+  }
+  
+  .location-input-container input,
+  .location-input-container textarea {
+    width: 100%;
+    padding: 1.5vh 1.5vh 1.5vh 3.5vh; /* Adjust padding for icon */
+    border: 0.2vh solid #ddd;
+    border-radius: 0.5vh;
+  }
+  
+  .location-check-btn,
+  .location-book-btn {
+    padding: 1.5vh;
+    font-size: 2vh;
+    font-weight: bold;
+    border-radius: 0.5vh;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .location-check-btn {
+    background: #f66d44;
+    color: white;
+  }
+  
+  .location-book-btn {
+    background: #2c2c54;
+    color: white;
+  }
+  
+  /* Decorative Section */
+  .location-decorative {
+    width: 80%;
+    display: flex;
+    justify-content: center; /* Center decorative items */
+    align-items: center;
+    gap: 2vw;
+    margin-top: 2vh; /* Add space between content and decorative section */
+    position: relative;
+    bottom: 60vh;
+  }
+  .location-tree {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 65vh;
+    left: 9.3vh;
+  }
+  .location-plane-image {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    position: relative;
+    top:50vh;
+    left:55vh;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 1200px) {
+    .location-left,
+    .location-right {
+      width: 100%; /* Full width for smaller screens */
+      margin-bottom: 2vh;
+    }
+  
+    .location-container {
+      padding: 2vh 2vw; /* Reduce padding */
+    }
+  
+    .location-decorative {
+      justify-content: space-evenly; /* Distribute decorative items evenly */
+    }
+  
+    .location-tree,
+    .location-plane-image {
+      width: 40%; /* Adjust decorative element size */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .location-container {
+      padding: 1vh 1vw; /* Further reduce padding */
+    }
+  
+    .location-tree,
+    .location-plane-image {
+      width: 45%; /* Further reduce decorative element size */
+    }
+  }
+  
