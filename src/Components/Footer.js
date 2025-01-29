@@ -11,6 +11,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { Link } from "react-router-dom"; // Import Link for internal navigation
 
 const Footer = () => {
   return (
@@ -23,18 +24,46 @@ const Footer = () => {
             Travel
             <img src={arrowImage} alt="Arrow Decoration" className="arrow-image" />
           </h3>
-          <p>Travel helps companies<br></br> manage payments easily.</p>
+          <p>
+            Travel helps companies
+            <br />
+            manage payments easily.
+          </p>
           <div className="footer-icons">
-            <a href="#" className="icon">
+            <a
+              href="https://www.linkedin.com/in/yourprofile"
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="#" className="icon">
+            <a
+              href="https://www.facebook.com/yourpage"
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="#" className="icon">
+            <a
+              href="https://twitter.com/yourprofile"
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="#" className="icon">
+            <a
+              href="https://www.instagram.com/yourprofile"
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
@@ -44,10 +73,18 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Company</h4>
           <ul>
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Blog</li>
-            <li>Pricing</li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/careers">Careers</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/pricing">Pricing</Link>
+            </li>
           </ul>
         </div>
 
@@ -55,10 +92,18 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Destinations</h4>
           <ul>
-            <li>Maldives</li>
-            <li>Los Angeles</li>
-            <li>Las Vegas</li>
-            <li>Toronto</li>
+            <li>
+              <Link to="/destinations/maldives">Maldives</Link>
+            </li>
+            <li>
+              <Link to="/destinations/los-angeles">Los Angeles</Link>
+            </li>
+            <li>
+              <Link to="/destinations/las-vegas">Las Vegas</Link>
+            </li>
+            <li>
+              <Link to="/destinations/toronto">Toronto</Link>
+            </li>
           </ul>
         </div>
 
@@ -66,11 +111,11 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Join Our Newsletter</h4>
           <form className="newsletter-form">
-            <input type="email" placeholder="Your email address" />
+            <input type="email" placeholder="Your email address" required />
             <button type="submit">Subscribe</button>
           </form>
           <p className="newsletter-note">
-            * Will send you weekly updates for your better tour packages.
+            * We will send you weekly updates for better tour packages.
           </p>
         </div>
       </div>
