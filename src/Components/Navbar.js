@@ -56,7 +56,7 @@ const Navbar = () => {
             )}
           </li>
           <li>
-            <Link to="/upcoming-packages">Upcoming Packages</Link>
+            <Link to="/UpcomingPackages">Upcoming Packages</Link>
           </li>
         </ul>
         <button className="get-in-touch">Get in Touch</button>
