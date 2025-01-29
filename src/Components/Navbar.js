@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "../Styles/Navbar.css";
@@ -21,24 +22,42 @@ const Navbar = () => {
           <img src={arrowImage} alt="Arrow" className="arrow1" />
         </div>
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li> {/* Home Link */}
-          <li><Link to="/about">About</Link></li> {/* About Page Link */}
+          <li>
+            <Link to="/">Home</Link> {/* Home Link */}
+          </li>
+          <li>
+            <Link to="/about">About</Link> {/* About Page Link */}
+          </li>
           <li
             className="dropdown"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <a href="#Services">Services</a>
+            {/* Use Link if Services navigates within the app, else provide a valid external URL */}
+            <Link to="/services">Services</Link>
             {showDropdown && (
               <ul className="dropdown-menu">
-                <li><a href="#Honeymoon">Honeymoon Packages</a></li>
-                <li><a href="#Tours">Tours Packages</a></li>
-                <li><a href="#Events">Musical Events</a></li>
-                <li><a onClick={openModal} className="dropdown-button">Build Package</a></li>
+                <li>
+                  <Link to="/services/honeymoon">Honeymoon Packages</Link>
+                </li>
+                <li>
+                  <Link to="/services/tours">Tours Packages</Link>
+                </li>
+                <li>
+                  <Link to="/services/events">Musical Events</Link>
+                </li>
+                <li>
+                  {/* Use button for actions like opening a modal */}
+                  <button onClick={openModal} className="dropdown-button">
+                    Build Package
+                  </button>
+                </li>
               </ul>
             )}
           </li>
-          <li><Link to="/UpcomingPackages">Upcoming Packages</Link></li>
+          <li>
+            <Link to="/upcoming-packages">Upcoming Packages</Link>
+          </li>
         </ul>
         <button className="get-in-touch">Get in Touch</button>
       </nav>
