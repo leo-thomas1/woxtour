@@ -9,7 +9,7 @@
   text-align: center; /* Center the text */
   padding: 0 20px; /* Add padding for spacing on smaller screens */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0); /* Optional shadow for better contrast */
-  transform: translate(-13%,0%);
+  transform: translate(-13%, 0%);
 }
 
 .home-content {
@@ -19,6 +19,7 @@
   margin: 0 auto; /* Center the content */
   text-align: left; /* Align text to the left */
 }
+
 .home-vector-image {
   display: block;
   margin: 0 auto; /* Center the vector image */
@@ -28,7 +29,6 @@
   position: relative;
   right: 310px;
 }
-
 
 .home-content h1 {
   font-size: 2.5rem; /* Reduced font size */
@@ -114,7 +114,6 @@
   margin-left: -20px; /* Overlap circles by shifting left */
   position: relative; /* Keep the circles positioned correctly */
   border: 2px solid white; /* Add a white border */
-
 }
 
 .home-footer .icon-circle img {
@@ -185,57 +184,54 @@
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff; /* Subtle gray */
-  text-transform:small;
+  text-transform: small;
   font-weight: 400;
-transform: translate(0%,-100%);
+  transform: translate(0%, -100%);
 }
-
-
-/* Responsive Design */
 
 /* Responsive Design Enhancements */
 
 /* For tablets and smaller desktops (max-width: 1024px) */
 @media (max-width: 1024px) {
-  .content {
+  .home-content {
     max-width: 90%; /* Reduce content width slightly */
   }
 
-  .vector-image {
+  .home-vector-image {
     transform: translate(-300%); /* Adjust alignment for smaller screens */
     width: 50px; /* Scale down slightly */
   }
 
-  .search-form {
+  .home-search-form {
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
     padding: 8px 15px; /* Reduce padding */
     gap: 10px; /* Adjust gap */
   }
 
-  .search-form input,
-  .search-form select,
-  .search-form .submit {
+  .home-search-form input,
+  .home-search-form select,
+  .home-search-form .submit {
     min-width: 100px; /* Adjust minimum width */
   }
 
-  .circle-container {
+  .home-circle-container {
     width: 300px; /* Scale down the circle container */
     height: 300px;
   }
 
-  .large-circle {
+  .home-large-circle {
     width: 250px;
     height: 250px;
     transform: translate(-150%, -20%);
   }
 
-  .small-circle {
+  .home-small-circle {
     width: 120px;
     height: 120px;
     transform: translate(-250%, 0%);
   }
 
-  .footer .icon-circle {
+  .home-footer .icon-circle {
     width: 35px;
     height: 35px; /* Slightly smaller circles */
   }
@@ -243,125 +239,125 @@ transform: translate(0%,-100%);
 
 /* For phones (max-width: 768px) */
 @media (max-width: 768px) {
-  .content h1 {
+  .home-content h1 {
     font-size: 2rem; /* Reduce font size for headings */
     line-height: 1.2;
     margin: 15px 0;
   }
 
-  .vector-image {
+  .home-vector-image {
     transform: translate(-200%);
     width: 40px; /* Smaller vector image */
   }
 
-  .search-form {
+  .home-search-form {
     flex-direction: column; /* Stack form elements vertically */
     padding: 10px; /* Adjust padding */
   }
 
-  .search-form input,
-  .search-form select,
-  .search-form .submit {
+  .home-search-form input,
+  .home-search-form select,
+  .home-search-form .submit {
     width: 100%; /* Make form elements take full width */
   }
 
-  .circle-container {
+  .home-circle-container {
     width: 250px;
     height: 250px; /* Further reduce size */
   }
 
-  .large-circle {
+  .home-large-circle {
     width: 200px;
     height: 200px;
     transform: translate(-130%, -15%);
   }
 
-  .small-circle {
+  .home-small-circle {
     width: 100px;
     height: 100px;
     transform: translate(-220%, 0%);
   }
 
-  .footer .icons {
+  .home-footer .icons {
     flex-wrap: wrap; /* Stack icons */
     gap: 8px;
   }
 
-  .footer p {
+  .home-footer p {
     font-size: 0.8rem; /* Adjust text size */
   }
 }
 
 /* For small phones (max-width: 480px) */
 @media (max-width: 480px) {
-  .content h1 {
+  .home-content h1 {
     font-size: 1.5rem; /* Further reduce font size */
     margin: 10px 0;
   }
 
-  .vector-image {
+  .home-vector-image {
     width: 30px; /* Tiny vector for small screens */
     transform: translate(-180%);
   }
 
-  .search-form {
+  .home-search-form {
     padding: 8px; /* Reduce padding further */
     gap: 8px;
   }
 
-  .circle-container {
+  .home-circle-container {
     width: 200px;
     height: 200px; /* Scale down further */
   }
 
-  .large-circle {
+  .home-large-circle {
     width: 150px;
     height: 150px;
     transform: translate(-110%, -10%);
   }
 
-  .small-circle {
+  .home-small-circle {
     width: 80px;
     height: 80px;
     transform: translate(-190%, 0%);
   }
 
-  .footer .icons {
+  .home-footer .icons {
     gap: 6px; /* Tighten gap */
   }
 
-  .footer .icon-circle {
+  .home-footer .icon-circle {
     width: 30px;
     height: 30px;
   }
 
-  .footer p {
+  .home-footer p {
     font-size: 0.7rem; /* Smallest font size for text */
   }
 }
 
 /* For larger screens (min-width: 1440px) */
 @media (min-width: 1440px) {
-  .content {
+  .home-content {
     max-width: 80%; /* Increase content width slightly */
   }
 
-  .vector-image {
+  .home-vector-image {
     width: 70px; /* Slightly larger vector image */
   }
 
-  .circle-container {
+  .home-circle-container {
     width: 500px; /* Increase size */
     height: 500px;
   }
 
-  .large-circle {
+  .home-large-circle {
     width: 400px;
     height: 400px;
     transform: translate(-175%, -20%);
   }
 
-  .small-circle {
+  .home-small-circle {
     width: 200px;
     height: 200px;
     transform: translate(-300%, 10%);
