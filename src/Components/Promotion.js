@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Promotion.css"; // Create a corresponding CSS file
+import "../Styles/Promotion.css"; // Import the CSS file
 import eiffelTower from "../images/promotions/eiffelTower.png";
 import bigBen from "../images/promotions/bigBen.png";
 import colosseum from "../images/promotions/colosseum.png";
@@ -9,20 +9,26 @@ import barcelona from "../images/promotions/barcelona.png";
 const Promotion = () => {
   return (
     <div className="home-promotion-section">
+      {/* Promotion Content Section */}
       <div className="home-promotion-content">
         <p className="home-promotion-label">PROMOTION</p>
-        <h1>We Provide You Best <br/>Europe Sightseeing Tours</h1>
+        <h1>We Provide You Best <br />Europe Sightseeing Tours</h1>
         <p className="home-promotion-description">
-        Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!
+          Et labore harum non nobis ipsum eum molestias mollitia et corporis
+          praesentium a laudantium internos. Non quis eius quo eligendi corrupti
+          et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum
+          aut optio quibusdam!
         </p>
-        <button className ="home-view-packages-button">View Packages</button>
+        <button className="home-view-packages-button">View Packages</button>
       </div>
 
+      {/* Main Image Section */}
       <div className="home-pro-main-image">
         <img src={eiffelTower} alt="Eiffel Tower" />
         <p className="home-pro-vertical-text">Breath Taking Views</p>
       </div>
 
+      {/* Image Cards Section */}
       <div className="home-pro-promotion-images">
         <div className="home-image-cards">
           <div className="home-image-card">

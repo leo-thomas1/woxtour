@@ -1,242 +1,147 @@
-/* Promotion Section Styling */
+/* General Styles */
 .home-promotion-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4vh 2vw;
-  font-family: Arial, sans-serif;
-  max-width: 90%;
-  margin: 0 auto;
-  position: relative;
-  background-color: #fff;
-  z-index: 1;
+  padding: 2rem;
+  background-color: #f9f9f9;
 }
 
 .home-promotion-content {
   text-align: center;
-  margin-bottom: 5vh;
-  position: relative;
-  width:60%;
-  right: 20vh;
-  top: 20vh;
+  max-width: 800px;
+  margin-bottom: 2rem;
 }
 
 .home-promotion-label {
-  font-size: 2vh;
-  color: #ff5a5f;
-  font-weight: bold;
+  font-size: 1rem;
+  color: #ff6f61;
   text-transform: uppercase;
-  margin-bottom: 1vh;
-  text-align: left;
+  margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 3.5vh;
+.home-promotion-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #333;
-  margin-bottom: 2vh;
-  position: relative;
-  max-width: 100%;
-  text-align: left;
 }
 
 .home-promotion-description {
-  font-size: 1.6vh;
-  color: #555;
-  margin-bottom: 2vh;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
   line-height: 1.6;
-  text-align: left;
-  width: 50%;
 }
 
 .home-view-packages-button {
-  background-color: #ff5a5f;
+  padding: 0.75rem 2rem;
+  background-color: #ff6f61;
   color: white;
   border: none;
-  padding: 1vh 2vw;
-  border-radius: 0.8vh;
-  font-size: 1.6vh;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
   transition: background-color 0.3s ease;
-  position: relative;
-  right: 45.5vh;
 }
 
 .home-view-packages-button:hover {
-  background-color: #e14b4f;
+  background-color: #e65a50;
 }
 
-.home-pro-promotion-images {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3vh;
-  position: relative;
-  bottom: 5vh;
-}
-
+/* Main Image Section */
 .home-pro-main-image {
   position: relative;
-  width: 25%; /* Reduced size */
-  max-width: 400px; /* Limit max width */
-  margin: 0 auto;
-  text-align: center;
-  bottom: 5vh;
-  position: relative;
-  left: 30vh;
+  margin-bottom: 2rem;
 }
 
 .home-pro-main-image img {
   width: 100%;
+  max-width: 600px;
   height: auto;
-  border-radius: 1vh;
-  z-index: 2; /* Ensure the image is above the gradient */
-  position: relative; /* Establish stacking context */
-}
-
-.home-pro-main-image::before {
-  content: '';
-  position: absolute;
-  top: -2vh;
-  left: -2vw;
-  width: calc(80% + 4vw);
-  height: calc(90% + 4vh);
-  border: 0.4vh solid #91038f;
-  border-radius: 50% 50% 0 0;
-  z-index: 1;
-  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .home-pro-vertical-text {
   position: absolute;
-  top: 25%;
-  right: -2vw;
-  transform: rotate(270deg);
-  transform-origin: right center;
-  font-size: 3.5vh;
-  color: #888888a7;
+  top: 50%;
+  right: -2rem;
+  transform: rotate(90deg);
+  font-size: 1.2rem;
+  color: #ff6f61;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
+/* Image Cards Section */
+.home-pro-promotion-images {
+  width: 100%;
+  max-width: 1200px;
+}
+
 .home-image-cards {
-  display: flex;
-  gap: 1.5vw;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-  right: 47vh;
-  width:120vh;
-  bottom: 3vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 .home-image-card {
   position: relative;
-  top: -27vh;
-  left:20vh;
-  width: 20%; /* Reduced size */
-  max-width: 200px; /* Limit max size for individual images */
-  height: auto;
   overflow: hidden;
-  border-radius: 1vh;
-  box-shadow: 0 0.5vh 0.8vh rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.home-image-card:hover {
+  transform: translateY(-5px);
 }
 
 .home-image-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .home-price-tag {
   position: absolute;
-  top: 1vh;
-  left: 1vw;
-  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgba(255, 111, 97, 0.9);
   color: white;
-  font-size: 1.2vh;
-  padding: 0.3vh 0.5vw;
-  border-radius: 0.5vh;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  h1 {
-      font-size: 3vh;
-  }
-
-  .home-promotion-description {
-      font-size: 1.4vh;
-  }
-
-  .home-pro-main-image {
-      max-width: 300px; /* Smaller main image for tablets */
-      bottom: 3vh;
-  }
-
-  .home-pro-main-image::before {
-      top: -1.5vh;
-      left: -1.5vw;
-      width: calc(100% + 3vw);
-      height: calc(100% + 3vh);
-      border: 0.3vh solid #91038f;
-  }
-
-  .home-vertical-text {
-      right: -3vw;
-      font-size: 2vh;
-  }
-
-  .home-image-card {
-      width: 25%;
-      max-width: 160px; /* Smaller cards for tablets */
-  }
-}
-
+/* Responsive Styles */
 @media (max-width: 768px) {
-  h1 {
-      font-size: 2.5vh;
+  .home-promotion-content h1 {
+    font-size: 2rem;
   }
 
-  .home-promotion-description {
-      font-size: 1.2vh;
+  .home-pro-vertical-text {
+    right: -1.5rem;
+    font-size: 1rem;
   }
 
-  .home-pro-main-image {
-      max-width: 250px;
-  }
-
-  .home-image-card {
-      width: 35%;
-      max-width: 140px;
-      margin: 1vh 0;
-  }
-
-  .home-vertical-text {
-      right: -2vw;
-      font-size: 1.8vh;
+  .home-image-cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
 @media (max-width: 480px) {
-  h1 {
-      font-size: 2vh;
+  .home-promotion-content h1 {
+    font-size: 1.5rem;
   }
 
-  .home-promotion-description {
-      font-size: 1vh;
+  .home-pro-vertical-text {
+    right: -1rem;
+    font-size: 0.9rem;
   }
 
-  .home-pro-main-image {
-      max-width: 200px;
-  }
-
-  .home-image-card {
-      width: 45%;
-      max-width: 120px;
-  }
-
-  .home-view-packages-button {
-      padding: 0.8vh 1.5vw;
-      font-size: 1.4vh;
+  .home-image-cards {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }

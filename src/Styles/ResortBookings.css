@@ -6,7 +6,8 @@
     padding: 100px 20px;
     background: linear-gradient(to right, #ffffff, #f8f8f8);
     position: relative;
-    top: -50px;
+    bottom: 10vh;
+    
   }
   
   .resort-booking-content {
