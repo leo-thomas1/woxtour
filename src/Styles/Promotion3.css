@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: top; /* Centers the image */
     width: 100%; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    height: 130vh; /* Full height of the viewport */
     display: flex; /* Center content */
     right: 30px;
     justify-content: center;
@@ -15,6 +15,7 @@
     color: white; /* Text color for contrast */
     overflow: hidden; /* Prevent overflow */
     z-index: 0;
+    top: 20vh;
   }
   
   /* Background Decor Image */
@@ -135,4 +136,6 @@
     top: 50%; /* Vertically center */
     transform: translateY(-50%);
   }
+
+  
   

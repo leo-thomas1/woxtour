@@ -78,6 +78,9 @@
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    width: 35vh;
+    display: block;
+
   }
   
   .tour-card:hover {
@@ -216,6 +219,7 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.056);
+    position: relative;
 
 
   }
@@ -340,7 +344,7 @@
     width: 70vh;
     height: 43vh;
     position: relative;
-    left: 55vh;
+    left: 75vh;
     bottom: 70vh;
     z-index: -1;
   }

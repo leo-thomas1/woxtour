@@ -1,10 +1,10 @@
 .international-container {
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1000px;
+    height: 1200px;
     position: relative;
     top: 100px;
-    right: 150px;
+    z-index: 0;
   }
   
   .section-title {
@@ -21,7 +21,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Four columns layout */
     gap: 20px;
-    width: 75   %;
   }
   
   .grid-item {
@@ -71,56 +70,56 @@
   .im2,
   .im10,
   .im11 {
-    width: 363px;
-    height: 363px;
+    width:280px;
+    height:280px;
   }
   .im4{
-    width: 363px;
-    height: 363px;
-    left: 1150px;
-    bottom: 400px;
+    width:280px;
+    height:280px;
+    left: 920px;
+    bottom: 300px;
   }
   .im5{
-    width: 363px;
-    height: 363px;
-    right: 380px;
+    width:280px;
+    height:280px;
+    right: 305px;
   }
   .im6{
-    width: 363px;
-    height: 363px;
-    bottom: 400px;
-    left: 380px;
+    width:280px;
+    height:280px;
+    bottom: 300px;
+    left: 300px;
 
   }
   .im7{
-    width: 363px;
-    height: 363px;
-    bottom: 400px;
-    left: 770px;
+    width:280px;
+    height:280px;
+    bottom: 300px;
+    left: 610px;
 
   }
 
     .im8,
     .im9
     {
-        width: 363px;
-        height: 363px;
-        right: 765px;
+        width:280px;
+        height:280px;
+        right: 615px;
 
     }
 
 .im10,
 .im11 {
-    width: 363px;
-    height: 363px;
-    bottom: 383px;
-    left: 765px;
+    width:280px;
+    height:280px;
+    bottom: 300px;
+    left: 605px;
   }
 
   .im3 {
     grid-column: span 2;
     grid-row: span 2;
-    width: 363px;
-    height: 778px;
+    width:280px;
+    height: 580px;
   }
   
