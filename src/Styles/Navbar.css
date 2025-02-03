@@ -1,3 +1,4 @@
+/* General Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -8,7 +9,6 @@
   top: 0;
   width: 80%;
   z-index: 10;
-  align-items: center;
   right: 10vh;
 }
 
@@ -49,7 +49,7 @@
   background-color: orange;
   color: white;
   border: none;
-  padding: 10px 10px;
+  padding: 10px 20px;
   transform: translate(-100%);
   border-radius: 5px;
   cursor: pointer;
@@ -72,7 +72,7 @@
   margin: 0;
   border-radius: 5px;
   z-index: 10;
-  width: 290%;
+  width: 200px; /* Adjusted width */
 }
 
 .dropdown-menu li {
@@ -88,4 +88,149 @@
 
 .dropdown-menu li:hover {
   background-color: #f0f0f0;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  color: #554b4b;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+
+.dropdown-button:hover {
+  color: #ff6f61;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 20px 30px;
+    width: 90%;
+    right: 5vh;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .arrow1 {
+    width: 80px;
+    bottom: -15px;
+    left: 100%;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem;
+    margin-left: 15px;
+  }
+
+  .get-in-touch {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 20px;
+    width: 95%;
+    right: 2vh;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .arrow1 {
+    width: 70px;
+    bottom: -10px;
+    left: 90%;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    font-size: 0.85rem;
+    margin-left: 10px;
+  }
+
+  .get-in-touch {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    width: 100%;
+    right: 0;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+
+  .arrow1 {
+    width: 60px;
+    bottom: -10px;
+    left: 80%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links li a {
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+
+  .get-in-touch {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    transform: none;
+    margin-right: 0;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .arrow1 {
+    width: 50px;
+    bottom: -8px;
+    left: 70%;
+  }
+
+  .nav-links li a {
+    font-size: 0.75rem;
+  }
+
+  .get-in-touch {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
 }
